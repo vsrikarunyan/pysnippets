@@ -1,0 +1,24 @@
+testGroupAnagrams (unittest.loader._FailedTest) ... ERROR
+
+======================================================================
+ERROR: testGroupAnagrams (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: testGroupAnagrams
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/unittest/loader.py", line 436, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/usr/lib/python3.8/unittest/loader.py", line 377, in _get_module_from_name
+    __import__(name)
+  File "/config/workspace/tests/testGroupAnagrams.py", line 3, in <module>
+    from config.groupAnagrams import group_anagrams
+  File "/config/workspace/config/groupAnagrams.py", line 14, in <module>
+    print(group_anagrams(input_strings))
+  File "/config/workspace/config/groupAnagrams.py", line 7, in group_anagrams
+    anagrams[hash(sorted_str)].append(istr) if sorted_str in anagrams else anagrams.update({sorted_str: [str]})
+TypeError: unhashable type: 'list'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

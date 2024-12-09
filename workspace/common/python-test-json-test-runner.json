@@ -1,0 +1,28 @@
+{
+  "results": {
+    "passed": [
+      {
+        "status": "success",
+        "test_scenario_name": "test_empty_input"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_group_anagrams"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_mixed_anagrams"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_no_anagrams"
+      },
+      {
+        "status": "success",
+        "test_scenario_name": "test_single_string"
+      }
+    ],
+    "failed": []
+  },
+  "time_taken": 0.001
+}
